@@ -22,7 +22,7 @@ for (let i = 0; i < inputFields.length; i++) {
 }
 
 submitBtn.addEventListener("click", function (event) {
-  event.preventDefault(); // Prevent the default form submission
+  event.preventDefault(); 
 
   const eventName = document.getElementById("event-name").value.trim();
   const eventDate = document.getElementById("event-date").value.trim();

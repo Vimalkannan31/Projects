@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="error-message" class="hidden">
+            <p id="error-text"></p> <span id="error-text">Please fill in all fields</span>
+            <button id="close-btn">&times;</button>
+        </div>
+        <div id="Invitation" class="hidden">
+            <h2 id="success-text">YOU ARE INVITED</h2>
+            <h4>TO JOIN THE</h4>
+            <h3 id="event-title-display"> </h3><h3>Meetup</h3>
+            <p><strong>Date:</strong> <span id="event-date-display"></span></p>
+            <p><strong>Start Time:</strong> <span id="event-Starttime-display"></span></p>
+            <p><strong>End Time:</strong> <span id="event-Endtime-display"></span></p>
+            <p><strong>Location:</strong> <span id="event-location-display"></span></p>
+            <p> <span id="event-description-display"></span></p>
+        </div>
+        
+        <form id="event-invite-form" class="">
+            <h1 id="event-heading">Create an Event Invite</h1>
+
+            <label for="event-name">Event Name</label><br>
+            <input type="text" id="event-name" name="event-name"  placeholder="Enter Event Name"><br><br>
+
+            <label for ="event-date">Event Date</label><br>
+            <input type="date" id="event-date" name="event-date" ><br><br>
+
+            <label for ="start-time">Start Time</label><br>
+            <input type="time" id="start-time" name="start-time"  ><br><br>
+
+            <label for="=end-time">End Time</label><br>
+            <input type="time" id="end-time" name="end-time" ><br><br>
+
+            <label for="event-description">Event Description</label><br>
+            <Textarea id="event-description" name="event-description" rows="4" cols="40" placeholder="Brief Description of the Event" ></Textarea><br><br>
+
+
+            </div>
+            <label for="event-location">Event Location</label><br>
+            <input type="text" id="event-location" name="event-location" placeholder="Location of the Event"><br><br>
+
+
+            <button type="submit" id="submit-btn">Create Invite</button>
+
+        </form>
+    </body>
+    <script src="./script.js"></script>
+</html>
